@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <h1><stong>HTML - Hypertext Markup Language</stong></h1>
+    <ul class="glossario">
+        <li><a href="/index.html">Início</a></li>
+    </ul>
+    </div>
+    <hr>
+    <p class="subtitulo">Aqui está uma lista dos comandos e elementos disponíveis no HTML:</p>
+    <h2 id="1-estrutura-básica-do-html"><strong>1. Estrutura Básica do HTML</strong></h2>
+    <ul>
+        <li><strong><code>&lt;!DOCTYPE html&gt;</code></strong> - Declara o tipo de documento.</li>
+        <li><strong><code>&lt;html&gt;</code></strong> - Define o elemento raiz do documento.</li>
+        <li><strong><code>&lt;head&gt;</code></strong> - Contém metadados e links externos.</li>
+        <li><strong><code>&lt;title&gt;</code></strong> - Define o título da página.</li>
+        <li><strong><code>&lt;body&gt;</code></strong> - Contém o conteúdo visível da página.</li>
+    </ul>
+    <h2 id="2-elementos-de-texto-e-formatação"><strong>2. Elementos de Texto e Formatação</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Cabeçalhos:</strong> </p>
+            <ul>
+                <li><code>&lt;h1&gt;</code> até <code>&lt;h6&gt;</code> - Títulos, sendo <code>&lt;h1&gt;</code> o maior.
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Parágrafos e Quebras:</strong> </p>
+            <ul>
+                <li><code>&lt;p&gt;</code> - Parágrafo.</li>
+                <li><code>&lt;br&gt;</code> - Quebra de linha. <em>(sem fechamento)</em></li>
+                <li><code>&lt;hr&gt;</code> - Linha horizontal. <em>(sem fechamento)</em></li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Formatação de Texto:</strong> </p>
+            <ul>
+                <li><code>&lt;b&gt;</code> - Texto em negrito.</li>
+                <li><code>&lt;strong&gt;</code> - Texto com ênfase (semântico, importante).</li>
+                <li><code>&lt;i&gt;</code> - Texto em itálico.</li>
+                <li><code>&lt;em&gt;</code> - Texto enfatizado (semântico).</li>
+                <li><code>&lt;u&gt;</code> - Texto sublinhado.</li>
+                <li><code>&lt;mark&gt;</code> - Texto destacado.</li>
+                <li><code>&lt;small&gt;</code> - Texto menor.</li>
+                <li><code>&lt;sup&gt;</code> - Texto sobrescrito.</li>
+                <li><code>&lt;sub&gt;</code> - Texto subscrito.</li>
+                <li><code>&lt;del&gt;</code> - Texto riscado.</li>
+                <li><code>&lt;ins&gt;</code> - Texto inserido/sublinhado.</li>
+                <li><code>&lt;code&gt;</code> - Texto formatado como código.</li>
+                <li><code>&lt;pre&gt;</code> - Texto pré-formatado.</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="3-links-e-âncoras"><strong>3. Links e Âncoras</strong></h2>
+    <ul>
+        <li><strong><code>&lt;a&gt;</code></strong> - Hiperlink (com atributo <code>href</code>).<br> Exemplo:
+            <code>&lt;a href=&quot;https://exemplo.com&quot;&gt;Clique aqui&lt;/a&gt;</code></li>
+        <li><strong><code>target</code></strong> - Define onde abrir o link (_blank para nova aba).</li>
+        <li><strong><code>&lt;link&gt;</code></strong> - Conecta recursos externos, como folhas de estilo CSS. <em>(Usado no
+                <code>&lt;head&gt;</code>)</em></li>
+    </ul>
+    <h2 id="4-listas"><strong>4. Listas</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Listas Não Ordenadas:</strong> </p>
+            <ul>
+                <li><code>&lt;ul&gt;</code> - Lista não ordenada.</li>
+                <li><code>&lt;li&gt;</code> - Item de lista.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Listas Ordenadas:</strong> </p>
+            <ul>
+                <li><code>&lt;ol&gt;</code> - Lista ordenada.</li>
+                <li><code>&lt;li&gt;</code> - Item de lista.</li>
+                <li><code>type</code> - Define o estilo (1, A, a, I, i).</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Listas de Definição:</strong> </p>
+            <ul>
+                <li><code>&lt;dl&gt;</code> - Lista de definição.</li>
+                <li><code>&lt;dt&gt;</code> - Termo da definição.</li>
+                <li><code>&lt;dd&gt;</code> - Descrição do termo.</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="5-imagens-e-multimídia"><strong>5. Imagens e Multimídia</strong></h2>
+    <ul>
+        <li>
+            <p><strong><code>&lt;img&gt;</code></strong> - Insere uma imagem.<br> Atributos importantes: </p>
+            <ul>
+                <li><code>src</code> - Caminho da imagem.</li>
+                <li><code>alt</code> - Texto alternativo para acessibilidade.</li>
+                <li><code>width</code> e <code>height</code> - Tamanho.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Áudio e Vídeo:</strong> </p>
+            <ul>
+                <li><code>&lt;audio&gt;</code> - Adiciona áudio.</li>
+                <li><code>&lt;video&gt;</code> - Adiciona vídeo.</li>
+                <li><code>&lt;source&gt;</code> - Fonte do áudio/vídeo.</li>
+                <li><code>controls</code> - Mostra controles de reprodução.</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="6-tabelas"><strong>6. Tabelas</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Estrutura Básica:</strong> </p>
+            <ul>
+                <li><code>&lt;table&gt;</code> - Define a tabela.</li>
+                <li><code>&lt;tr&gt;</code> - Linha da tabela.</li>
+                <li><code>&lt;th&gt;</code> - Cabeçalho da tabela.</li>
+                <li><code>&lt;td&gt;</code> - Célula da tabela.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Propriedades Avançadas:</strong> </p>
+            <ul>
+                <li><code>&lt;caption&gt;</code> - Legenda da tabela.</li>
+                <li><code>&lt;thead&gt;</code> - Cabeçalho agrupado.</li>
+                <li><code>&lt;tbody&gt;</code> - Corpo da tabela.</li>
+                <li><code>&lt;tfoot&gt;</code> - Rodapé da tabela.</li>
+                <li><code>colspan</code> - Mesclar colunas.</li>
+                <li><code>rowspan</code> - Mesclar linhas.</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="7-formulários-e-inputs"><strong>7. Formulários e Inputs</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Estrutura:</strong> </p>
+            <ul>
+                <li><code>&lt;form&gt;</code> - Cria o formulário.</li>
+                <li><code>&lt;input&gt;</code> - Campo de entrada.</li>
+                <li><code>&lt;label&gt;</code> - Rótulo associado a um campo.</li>
+                <li><code>&lt;textarea&gt;</code> - Caixa de texto multilinhas.</li>
+                <li><code>&lt;select&gt;</code> - Menu suspenso.</li>
+                <li><code>&lt;option&gt;</code> - Opção dentro do <code>&lt;select&gt;</code>.</li>
+                <li><code>&lt;button&gt;</code> - Botão clicável.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Tipos de Input:</strong> </p>
+            <ul>
+                <li><code>text</code>, <code>password</code>, <code>email</code>, <code>number</code>, <code>tel</code>,
+                    <code>url</code>, <code>date</code>, <code>time</code>, <code>checkbox</code>, <code>radio</code>,
+                    <code>range</code>, <code>file</code>, <code>color</code>, <code>submit</code>, <code>reset</code>,
+                    <code>hidden</code>.</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="8-estrutura-semântica-html5"><strong>8. Estrutura Semântica (HTML5)</strong></h2>
+    <ul>
+        <li><strong>Seções e Agrupamentos:</strong>
+            <ul>
+                <li><code>&lt;header&gt;</code> - Cabeçalho de seção.</li>
+                <li><code>&lt;nav&gt;</code> - Navegação.</li>
+                <li><code>&lt;main&gt;</code> - Conteúdo principal.</li>
+                <li><code>&lt;section&gt;</code> - Seção de conteúdo.</li>
+                <li><code>&lt;article&gt;</code> - Artigo de conteúdo independente.</li>
+                <li><code>&lt;aside&gt;</code> - Conteúdo relacionado (barra lateral).</li>
+                <li><code>&lt;footer&gt;</code> - Rodapé.</li>
+                <li><code>&lt;figure&gt;</code> - Agrupa mídia como imagens.</li>
+                <li><code>&lt;figcaption&gt;</code> - Legenda para <code>&lt;figure&gt;</code>.</li>
+            </ul>
+        </li>
+    </ul>
+    <p>Esses elementos ajudam a criar uma estrutura HTML bem organizada e semântica, tornando o site mais acessível e fácil
+        de entender tanto para usuários quanto para motores de busca (SEO).</p>
+    <h3><strong><code>&lt;main&gt;</code></strong></h3>
+    <ul>
+        <li><strong>Definição</strong>: Representa o conteúdo principal de uma página. Esse conteúdo deve ser único e
+            relevante para o propósito principal da página.</li>
+        <li><strong>Características</strong>:<ul>
+                <li>Deve conter apenas um único <code>&lt;main&gt;</code> por página.</li>
+                <li>Exclui cabeçalhos, rodapés, barras laterais e outros elementos que não fazem parte do &quot;conteúdo
+                    principal&quot;.</li>
+                <li>Facilita a navegação para tecnologias assistivas, como leitores de tela.</li>
+            </ul>
+        </li>
+    </ul>
+    <h4 id="exemplo">Exemplo:</h4>
+    <pre><code class="language-javascript">    &lt;main&gt;
+            &lt;h1&gt;Bem-vindo ao meu site&lt;/h1&gt;
+            &lt;p&gt;Este é o conteúdo principal da página.&lt;/p&gt;
+        &lt;/main&gt;</code></pre>
+    <h3><strong><code>&lt;header&gt;</code></strong></h3>
+    <ul>
+        <li><strong>Definição</strong>: Representa o cabeçalho de um documento ou de uma seção. Pode conter títulos,
+            logotipos, menus de navegação, etc.</li>
+        <li><strong>Características</strong>:<ul>
+                <li>Pode ser usado várias vezes em uma página, por exemplo, no cabeçalho principal da página e nos
+                    cabeçalhos de seções ou artigos.</li>
+                <li>É ideal para introduzir o conteúdo de uma página ou seção.</li>
+            </ul>
+        </li>
+    </ul>
+    <h4 id="exemplo-1">Exemplo:</h4>
+    <pre><code class="language-javascript">    &lt;header&gt;
+            &lt;h1&gt;Minha Página&lt;/h1&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href=&quot;#inicio&quot;&gt;Início&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#sobre&quot;&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#contato&quot;&gt;Contato&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        &lt;/header&gt;</code></pre>
+    <h3><strong><code>&lt;footer&gt;</code></strong></h3>
+    <ul>
+        <li>Representa o rodapé de um documento ou seção. Pode conter informações como direitos autorais, links para
+            políticas, rodapés de seção, etc.</li>
+        <li>Pode ser usado múltiplas vezes.</li>
+    </ul>
+    <h4 id="exemplo-2">Exemplo:</h4>
+    <pre><code class="language-javascript">    &lt;footer&gt;
+            &lt;p&gt;© 2025 Minha Empresa. Todos os direitos reservados.&lt;/p&gt;
+        &lt;/footer&gt;</code></pre>
+    <h3><strong><code>&lt;section&gt;</code></strong></h3>
+    <ul>
+        <li>Representa uma seção temática de um documento. É ideal para agrupar conteúdo relacionado.</li>
+        <li>Pode conter cabeçalhos, parágrafos, imagens e outros elementos.</li>
+    </ul>
+    <h4 id="exemplo-3">Exemplo:</h4>
+    <pre><code class="language-javascript">    &lt;section&gt;
+            &lt;h2&gt;Sobre Nós&lt;/h2&gt;
+            &lt;p&gt;Somos uma empresa dedicada à tecnologia.&lt;/p&gt;
+        &lt;/section&gt;</code></pre>
+    <h3><strong><code>&lt;article&gt;</code></strong></h3>
+    <ul>
+        <li>Representa conteúdo independente e autocontido, como uma postagem de blog, um artigo de notícias ou um
+            comentário.</li>
+        <li>Pode ser compartilhado ou reutilizado fora de seu contexto original.</li>
+    </ul>
+    <h4 id="exemplo-4">Exemplo:</h4>
+    <pre><code class="language-javascript">    &lt;article&gt;
+            &lt;h2&gt;Postagem no Blog&lt;/h2&gt;
+            &lt;p&gt;Este é o conteúdo do artigo.&lt;/p&gt;
+        &lt;/article&gt;</code></pre>
+    <h3><strong><code>&lt;aside&gt;</code></strong></h3>
+    <ul>
+        <li>Representa conteúdo complementar ou relacionado ao principal, como barras laterais, caixas de informações ou
+            anúncios.</li>
+    </ul>
+    <h4 id="exemplo-5">Exemplo:</h4>
+    <pre><code class="language-javascript">    &lt;aside&gt;
+            &lt;h3&gt;Mais informações&lt;/h3&gt;
+            &lt;p&gt;Confira nossos outros artigos.&lt;/p&gt;
+        &lt;/aside&gt;</code></pre>
+    <h3><strong><code>&lt;nav&gt;</code></strong></h3>
+    <ul>
+        <li>Representa um conjunto de links de navegação principais da página.</li>
+    </ul>
+    <h4 id="exemplo-6">Exemplo:</h4>
+    <pre><code class="language-javascript">    &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#inicio&quot;&gt;Início&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#sobre&quot;&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#contato&quot;&gt;Contato&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;</code></pre>
+    <h3><strong>Resumo das Diferenças</strong></h3>
+    <table>
+        <thead>
+            <tr>
+                <th><strong>Elemento</strong></th>
+                <th><strong>Função</strong></th>
+                <th><strong>Pode ser usado várias vezes?</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;main&gt;</code></td>
+                <td>Conteúdo principal da página, único e central.</td>
+                <td>Não</td>
+            </tr>
+            <tr>
+                <td><code>&lt;header&gt;</code></td>
+                <td>Cabeçalho de uma página ou seção, com título e navegação.</td>
+                <td>Sim</td>
+            </tr>
+            <tr>
+                <td><code>&lt;footer&gt;</code></td>
+                <td>Rodapé de uma página ou seção.</td>
+                <td>Sim</td>
+            </tr>
+            <tr>
+                <td><code>&lt;section&gt;</code></td>
+                <td>Agrupa conteúdo tematicamente relacionado.</td>
+                <td>Sim</td>
+            </tr>
+            <tr>
+                <td><code>&lt;article&gt;</code></td>
+                <td>Conteúdo autocontido, como postagens de blog ou notícias.</td>
+                <td>Sim</td>
+            </tr>
+            <tr>
+                <td><code>&lt;aside&gt;</code></td>
+                <td>Conteúdo relacionado ao principal, mas não essencial (barras laterais).</td>
+                <td>Sim</td>
+            </tr>
+            <tr>
+                <td><code>&lt;nav&gt;</code></td>
+                <td>Links de navegação principais da página.</td>
+                <td>Sim</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 id="9-tags-interativas-e-scripts"><strong>9. Tags Interativas e Scripts</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Multimídia e Interatividade:</strong> </p>
+            <ul>
+                <li><code>&lt;canvas&gt;</code> - Gráficos e desenhos.</li>
+                <li><code>&lt;svg&gt;</code> - Gráficos vetoriais escaláveis.</li>
+                <li><code>&lt;iframe&gt;</code> - Incorporar páginas.</li>
+                <li><code>&lt;embed&gt;</code> - Conteúdos externos (vídeos, PDFs).</li>
+                <li><code>&lt;object&gt;</code> - Objetos externos.</li>
+                <li><code>&lt;param&gt;</code> - Parâmetro para objetos.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Scripts:</strong> </p>
+            <ul>
+                <li><code>&lt;script&gt;</code> - Código JavaScript embutido ou externo.</li>
+                <li><code>&lt;noscript&gt;</code> - Alternativa quando JavaScript está desativado.</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="10-metadados-e-seo"><strong>10. Metadados e SEO</strong></h2>
+    <ul>
+        <li><strong>No <code>&lt;head&gt;</code>:</strong>
+            <ul>
+                <li><code>&lt;meta&gt;</code> - Informações de metadados.</li>
+                <li><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code> - Codificação do texto.</li>
+                <li><code>&lt;meta name=&quot;viewport&quot;&gt;</code> - Configurações para dispositivos móveis.</li>
+                <li><code>&lt;meta name=&quot;description&quot;&gt;</code> - Descrição para SEO.</li>
+                <li><code>&lt;meta name=&quot;keywords&quot;&gt;</code> - Palavras-chave para SEO.</li>
+                <li><code>&lt;meta name=&quot;author&quot;&gt;</code> - Autor do site.</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="11-tags-obsoletas-evitar-o-uso"><strong>11. Tags Obsoletas (Evitar o Uso)</strong></h2>
+    <ul>
+        <li><code>&lt;center&gt;</code> - Substituído por CSS.</li>
+        <li><code>&lt;font&gt;</code> - Substituído por CSS.</li>
+        <li><code>&lt;marquee&gt;</code> - Uso descontinuado.</li>
+        <li><code>&lt;big&gt;</code> - Substituído por CSS.</li>
+    </ul>
+    <hr>
+    
+</body>
+</html>

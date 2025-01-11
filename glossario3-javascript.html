@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <stong>JavaScript</stong>
+        </h1>
+        <ul class="glossario">
+            <li><a href="/index.html">Início</a></li>
+        </ul>
+    </div>
+    <hr>
+    <p class="subtitulo">O JavaScript possui uma ampla variedade de comandos, métodos e funções. Abaixo está uma lista organizada por
+        categorias com os principais comandos e funções do JavaScript:</p>
+    <h2 id="1-declaração-de-variáveis"><strong>1. Declaração de Variáveis</strong></h2>
+    <ul>
+        <li><strong><code>var</code></strong> - Declara variável com escopo global ou de função. <em>(Antigo, não
+                recomendado)</em></li>
+        <li><strong><code>let</code></strong> - Declara variável com escopo de bloco. <em>(Recomendado)</em></li>
+        <li><strong><code>const</code></strong> - Declara constante com escopo de bloco. <em>(Não pode ser reatribuída)</em>
+        </li>
+    </ul>
+    <h2 id="2-estruturas-de-controle"><strong>2. Estruturas de Controle</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Condicional:</strong> </p>
+            <ul>
+                <li><code>if</code></li>
+                <li><code>else</code></li>
+                <li><code>else if</code></li>
+                <li><code>switch</code></li>
+                <li><code>case</code></li>
+                <li><code>default</code></li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Laços de Repetição:</strong> </p>
+            <ul>
+                <li><code>for</code></li>
+                <li><code>while</code></li>
+                <li><code>do...while</code></li>
+                <li><code>for...in</code> <em>(Itera sobre propriedades de um objeto)</em></li>
+                <li><code>for...of</code> _(Itera sobre valores iteráveis, como arrays)</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Controle de Fluxo:</strong> </p>
+            <ul>
+                <li><code>break</code> <em>(Interrompe o laço ou switch)</em></li>
+                <li><code>continue</code> <em>(Pula para a próxima iteração do laço)</em></li>
+                <li><code>return</code> <em>(Sai de uma função e retorna um valor)</em></li>
+                <li><code>throw</code> <em>(Lança um erro personalizado)</em></li>
+                <li><code>try</code>, <code>catch</code>, <code>finally</code> <em>(Tratamento de exceções)</em></li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="3-funções-e-classes"><strong>3. Funções e Classes</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Funções Tradicionais:</strong> </p>
+            <ul>
+                <li><code>function</code> <em>(Declaração de função)</em></li>
+                <li><code>arguments</code> <em>(Acesso aos argumentos passados para a função)</em></li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Arrow Functions (ES6):</strong> </p>
+            <ul>
+                <li><code>() =&gt; {}</code> <em>(Sintaxe mais curta para funções)</em></li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Classes (ES6):</strong> </p>
+            <ul>
+                <li><code>class</code> <em>(Declara uma classe)</em></li>
+                <li><code>constructor</code> <em>(Método especial para inicializar objetos)</em></li>
+                <li><code>super</code> <em>(Chama o construtor da classe pai)</em></li>
+                <li><code>extends</code> <em>(Herança de classes)</em></li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="4-manipulação-de-strings"><strong>4. Manipulação de Strings</strong></h2>
+    <ul>
+        <li><strong>Propriedades e Métodos Comuns:</strong>
+            <ul>
+                <li><code>length</code> <em>(Comprimento da string)</em></li>
+                <li><code>charAt()</code> <em>(Retorna o caractere em uma posição específica)</em></li>
+                <li><code>toUpperCase()</code> <em>(Converte para maiúsculas)</em></li>
+                <li><code>toLowerCase()</code> <em>(Converte para minúsculas)</em></li>
+                <li><code>trim()</code> <em>(Remove espaços em branco)</em></li>
+                <li><code>split()</code> <em>(Divide a string em um array)</em></li>
+                <li><code>replace()</code> <em>(Substitui parte da string)</em></li>
+                <li><code>substring()</code> <em>(Extrai parte da string)</em></li>
+                <li><code>includes()</code> <em>(Verifica se contém um texto)</em></li>
+                <li><code>startsWith()</code> <em>(Verifica se começa com um texto específico)</em></li>
+                <li><code>endsWith()</code> <em>(Verifica se termina com um texto específico)</em></li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="5-manipulação-de-arrays"><strong>5. Manipulação de Arrays</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Propriedades:</strong></p>
+            <ul>
+                <li><code>length</code> <em>(Número de elementos no array)</em></li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Métodos Comuns:</strong> </p>
+            <ul>
+                <li><code>push()</code> <em>(Adiciona um elemento no final)</em></li>
+                <li><code>pop()</code> <em>(Remove o último elemento)</em></li>
+                <li><code>shift()</code> <em>(Remove o primeiro elemento)</em></li>
+                <li><code>unshift()</code> <em>(Adiciona um elemento no início)</em></li>
+                <li><code>splice()</code> <em>(Adiciona ou remove elementos em posições específicas)</em></li>
+                <li><code>slice()</code> <em>(Extrai parte do array)</em></li>
+                <li><code>concat()</code> <em>(Concatena arrays)</em></li>
+                <li><code>indexOf()</code> <em>(Retorna o índice de um valor)</em></li>
+                <li><code>includes()</code> <em>(Verifica se um valor existe no array)</em></li>
+                <li><code>find()</code> <em>(Encontra o primeiro elemento que satisfaz uma condição)</em></li>
+                <li><code>filter()</code> <em>(Filtra elementos com base em uma condição)</em></li>
+                <li><code>map()</code> <em>(Cria um novo array aplicando uma função a cada elemento)</em></li>
+                <li><code>reduce()</code> <em>(Reduz o array a um único valor)</em></li>
+                <li><code>sort()</code> <em>(Ordena os elementos)</em></li>
+                <li><code>reverse()</code> <em>(Inverte a ordem dos elementos)</em></li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="6-manipulação-de-objetos"><strong>6. Manipulação de Objetos</strong></h2>
+    <ul>
+        <li><strong>Propriedades e Métodos:</strong>
+            <ul>
+                <li><code>Object.keys()</code> <em>(Retorna as chaves de um objeto)</em></li>
+                <li><code>Object.values()</code> <em>(Retorna os valores de um objeto)</em></li>
+                <li><code>Object.entries()</code> <em>(Retorna pares chave-valor)</em></li>
+                <li><code>Object.assign()</code> <em>(Copia propriedades de objetos)</em></li>
+                <li><code>Object.freeze()</code> <em>(Congela o objeto, impedindo alterações)</em></li>
+                <li><code>Object.seal()</code> <em>(Permite alterar valores, mas não adicionar ou remover propriedades)</em>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="7-funções-matemáticas-math"><strong>7. Funções Matemáticas (Math)</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Propriedades:</strong> </p>
+            <ul>
+                <li><code>Math.PI</code> <em>(Valor de π)</em></li>
+                <li><code>Math.E</code> <em>(Constante de Euler)</em></li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Métodos:</strong> </p>
+            <ul>
+                <li><code>Math.round()</code> <em>(Arredonda para o inteiro mais próximo)</em></li>
+                <li><code>Math.ceil()</code> <em>(Arredonda para cima)</em></li>
+                <li><code>Math.floor()</code> <em>(Arredonda para baixo)</em></li>
+                <li><code>Math.random()</code> <em>(Número aleatório entre 0 e 1)</em></li>
+                <li><code>Math.max()</code> <em>(Maior valor de uma lista)</em></li>
+                <li><code>Math.min()</code> <em>(Menor valor de uma lista)</em></li>
+                <li><code>Math.pow()</code> <em>(Potência)</em></li>
+                <li><code>Math.sqrt()</code> <em>(Raiz quadrada)</em></li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="8-funções-de-tempo"><strong>8. Funções de Tempo</strong></h2>
+    <ul>
+        <li><strong><code>setTimeout()</code></strong> <em>(Executa código após um tempo específico)</em></li>
+        <li><strong><code>setInterval()</code></strong> <em>(Executa código repetidamente em intervalos)</em></li>
+        <li><strong><code>clearTimeout()</code></strong> <em>(Cancela um timeout agendado)</em></li>
+        <li><strong><code>clearInterval()</code></strong> <em>(Cancela um intervalo agendado)</em></li>
+    </ul>
+    <h2 id="9-manipulação-do-dom-document-object-model"><strong>9. Manipulação do DOM (Document Object Model)</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Seleção de Elementos:</strong> </p>
+            <ul>
+                <li><code>document.getElementById()</code></li>
+                <li><code>document.getElementsByClassName()</code></li>
+                <li><code>document.getElementsByTagName()</code></li>
+                <li><code>document.querySelector()</code> <em>(Seleciona o primeiro elemento que corresponde ao
+                        seletor)</em></li>
+                <li><code>document.querySelectorAll()</code> _(Seleciona todos os elementos correspondentes ao seletor)</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Manipulação de Elementos:</strong> </p>
+            <ul>
+                <li><code>element.innerHTML</code> <em>(Define ou obtém o conteúdo HTML interno)</em></li>
+                <li><code>element.textContent</code> <em>(Define ou obtém o texto interno)</em></li>
+                <li><code>element.setAttribute()</code> <em>(Define um atributo)</em></li>
+                <li><code>element.getAttribute()</code> <em>(Obtém um atributo)</em></li>
+                <li><code>element.style</code> <em>(Manipula o estilo CSS inline)</em></li>
+                <li><code>element.appendChild()</code> <em>(Adiciona um elemento filho)</em></li>
+                <li><code>element.removeChild()</code> <em>(Remove um elemento filho)</em></li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="10-eventos"><strong>10. Eventos</strong></h2>
+    <ul>
+        <li><strong>Manipulação de Eventos:</strong>
+            <ul>
+                <li><code>addEventListener()</code> <em>(Adiciona um ouvinte de evento)</em></li>
+                <li><code>removeEventListener()</code> <em>(Remove um ouvinte de evento)</em></li>
+                <li><code>onclick</code> <em>(Executa código ao clicar no elemento)</em></li>
+                <li><code>onmouseover</code> <em>(Executa código ao passar o mouse sobre o elemento)</em></li>
+                <li><code>onkeydown</code> <em>(Executa código ao pressionar uma tecla)</em></li>
+                <li><code>onload</code> <em>(Executa código quando a página é carregada)</em></li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="11-manipulação-de-promessas-e-assíncronas-es6"><strong>11. Manipulação de Promessas e Assíncronas
+            (ES6+)</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Promessas:</strong> </p>
+            <ul>
+                <li><code>Promise</code> <em>(Criação de promessas)</em></li>
+                <li><code>.then()</code> <em>(Executa após sucesso)</em></li>
+                <li><code>.catch()</code> <em>(Executa após falha)</em></li>
+                <li><code>.finally()</code> <em>(Executa após conclusão)</em></li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Async/Await:</strong> </p>
+            <ul>
+                <li><code>async</code> <em>(Declara funções assíncronas)</em></li>
+                <li><code>await</code> <em>(Aguarda uma promessa ser resolvida)</em></li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+</body>
+</html>

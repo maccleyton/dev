@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <stong>CSS - Cascading Style Sheets</stong>
+        </h1>
+        <ul class="glossario">
+            <li><a href="/index.html">Início</a></li>
+        </ul>
+    </div>
+    <hr>
+    <p class="subtitulo">Aqui está uma lista abrangente dos <strong>comandos possíveis no CSS</strong> organizados por categorias:</p>
+    <h2 id="1-seletores"><strong>1. Seletores</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Seletores Básicos:</strong> </p>
+            <ul>
+                <li><code>*</code> - Seleciona todos os elementos.</li>
+                <li><code>element</code> - Seleciona todos os elementos com essa tag (ex: <code>p</code>).</li>
+                <li><code>.classe</code> - Seleciona elementos com essa classe.</li>
+                <li><code>#id</code> - Seleciona um elemento com esse ID.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Seletores Avançados:</strong> </p>
+            <ul>
+                <li><code>[atributo]</code> - Seleciona elementos com um atributo específico.</li>
+                <li><code>[atributo=&quot;valor&quot;]</code> - Seleciona elementos com um atributo igual ao valor.</li>
+                <li><code>[atributo~=&quot;valor&quot;]</code> - Contém um valor dentro de uma lista separada por espaços.
+                </li>
+                <li><code>[atributo^=&quot;valor&quot;]</code> - Começa com o valor especificado.</li>
+                <li><code>[atributo$=&quot;valor&quot;]</code> - Termina com o valor especificado.</li>
+                <li><code>[atributo*=&quot;valor&quot;]</code> - Contém o valor especificado.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Combinadores:</strong> </p>
+            <ul>
+                <li><code>A B</code> - Seleciona todos os B dentro de A (descendentes).</li>
+                <li><code>A &gt; B</code> - Seleciona apenas os B filhos diretos de A.</li>
+                <li><code>A + B</code> - Seleciona o B que está imediatamente após A (irmão adjacente).</li>
+                <li><code>A ~ B</code> - Seleciona todos os B que são irmãos de A.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Pseudo-classes:</strong> </p>
+            <ul>
+                <li><code>:hover</code> - Quando o mouse está sobre o elemento.</li>
+                <li><code>:focus</code> - Quando o elemento está em foco (ex: input).</li>
+                <li><code>:first-child</code> - Seleciona o primeiro filho de um elemento.</li>
+                <li><code>:last-child</code> - Seleciona o último filho de um elemento.</li>
+                <li><code>:nth-child(n)</code> - Seleciona o enésimo filho.</li>
+                <li><code>:nth-of-type(n)</code> - Seleciona o enésimo elemento de um tipo específico.</li>
+                <li><code>:not(selector)</code> - Seleciona tudo, exceto o seletor especificado.</li>
+                <li><code>:checked</code> - Seleciona inputs selecionados.</li>
+                <li><code>:disabled</code> - Seleciona elementos desabilitados.</li>
+                <li><code>:required</code> - Seleciona campos obrigatórios.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Pseudo-elementos:</strong> </p>
+            <ul>
+                <li><code>::before</code> - Insere conteúdo antes do elemento.</li>
+                <li><code>::after</code> - Insere conteúdo após o elemento.</li>
+                <li><code>::first-letter</code> - Estiliza a primeira letra.</li>
+                <li><code>::first-line</code> - Estiliza a primeira linha.</li>
+                <li><code>::selection</code> - Estiliza a seleção do texto.</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="2-propriedades-de-texto"><strong>2. Propriedades de Texto</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Fonte e Família:</strong> </p>
+            <ul>
+                <li><code>font-family</code> - Define a família de fontes.</li>
+                <li><code>font-size</code> - Tamanho da fonte.</li>
+                <li><code>font-weight</code> - Peso (negrito).</li>
+                <li><code>font-style</code> - Estilo (normal, itálico).</li>
+                <li><code>font-variant</code> - Pequenas caps (small-caps).</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Aparência do Texto:</strong> </p>
+            <ul>
+                <li><code>color</code> - Cor do texto.</li>
+                <li><code>letter-spacing</code> - Espaçamento entre letras.</li>
+                <li><code>word-spacing</code> - Espaçamento entre palavras.</li>
+                <li><code>line-height</code> - Altura da linha.</li>
+                <li><code>text-align</code> - Alinhamento do texto.</li>
+                <li><code>text-decoration</code> - Sublinhado, riscado, etc.</li>
+                <li><code>text-transform</code> - Maiúsculas/minúsculas.</li>
+                <li><code>white-space</code> - Controle de espaços em branco.</li>
+                <li><code>direction</code> - Direção do texto (ltr ou rtl).</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="3-propriedades-de-fundo"><strong>3. Propriedades de Fundo</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Cor e Imagem:</strong> </p>
+            <ul>
+                <li><code>background-color</code> - Cor de fundo.</li>
+                <li><code>background-image</code> - Imagem de fundo.</li>
+                <li><code>background-repeat</code> - Repetição (repeat, no-repeat).</li>
+                <li><code>background-position</code> - Posição da imagem.</li>
+                <li><code>background-size</code> - Tamanho da imagem (cover, contain).</li>
+                <li><code>background-attachment</code> - Fixação do fundo (scroll, fixed).</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Shorthand:</strong> </p>
+            <ul>
+                <li><code>background</code> - Agrupa todas as propriedades acima.</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="4-propriedades-de-layout-e-box-model"><strong>4. Propriedades de Layout e Box Model</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Margem e Preenchimento:</strong> </p>
+            <ul>
+                <li><code>margin</code> - Margem externa.</li>
+                <li><code>padding</code> - Espaçamento interno.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Borda:</strong> </p>
+            <ul>
+                <li><code>border</code> - Define todas as propriedades de borda.</li>
+                <li><code>border-width</code> - Largura da borda.</li>
+                <li><code>border-style</code> - Estilo (solid, dashed, dotted).</li>
+                <li><code>border-color</code> - Cor da borda.</li>
+                <li><code>border-radius</code> - Arredonda cantos.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Tamanho e Espaço:</strong> </p>
+            <ul>
+                <li><code>width</code> - Largura.</li>
+                <li><code>height</code> - Altura.</li>
+                <li><code>min-width</code> / <code>max-width</code> - Largura mínima/máxima.</li>
+                <li><code>min-height</code> / <code>max-height</code> - Altura mínima/máxima.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Sombreamento:</strong> </p>
+            <ul>
+                <li><code>box-shadow</code> - Sombra ao redor do elemento.</li>
+                <li><code>text-shadow</code> - Sombra no texto.</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="5-propriedades-de-display-e-posição"><strong>5. Propriedades de Display e Posição</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Display:</strong> </p>
+            <ul>
+                <li><code>display</code> - Tipo de exibição (block, inline, flex, grid).</li>
+                <li><code>visibility</code> - Controle de visibilidade (visible, hidden).</li>
+                <li><code>overflow</code> - Tratamento de conteúdo excedente (hidden, scroll).</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Posicionamento:</strong> </p>
+            <ul>
+                <li><code>position</code> - Posição (static, relative, absolute, fixed, sticky).</li>
+                <li><code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> - Distância para
+                    posicionamento.</li>
+                <li><code>z-index</code> - Ordem de empilhamento.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Float e Clear:</strong> </p>
+            <ul>
+                <li><code>float</code> - Flutuação (left, right).</li>
+                <li><code>clear</code> - Limpa elementos flutuantes.</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="6-propriedades-flexbox"><strong>6. Propriedades Flexbox</strong></h2>
+    <ul>
+        <li><strong>Container Flexível:</strong>
+            <ul>
+                <li><code>display: flex</code> - Ativa o flexbox.</li>
+                <li><code>flex-direction</code> - Direção dos itens (row, column).</li>
+                <li><code>justify-content</code> - Alinhamento horizontal.</li>
+                <li><code>align-items</code> - Alinhamento vertical.</li>
+                <li><code>flex-wrap</code> - Quebra de linha automática.</li>
+                <li><code>gap</code> - Espaçamento entre itens.</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="7-propriedades-de-grid"><strong>7. Propriedades de Grid</strong></h2>
+    <ul>
+        <li><strong>Container Grid:</strong>
+            <ul>
+                <li><code>display: grid</code> - Ativa o grid layout.</li>
+                <li><code>grid-template-rows</code> e <code>grid-template-columns</code> - Define linhas e colunas.</li>
+                <li><code>grid-gap</code> - Espaçamento entre linhas e colunas.</li>
+                <li><code>justify-items</code> e <code>align-items</code> - Alinhamento dos itens na célula.</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="8-animações-e-transições"><strong>8. Animações e Transições</strong></h2>
+    <ul>
+        <li>
+            <p><strong>Transições:</strong> </p>
+            <ul>
+                <li><code>transition</code> - Agrupa propriedades de transição.</li>
+                <li><code>transition-duration</code> - Duração da transição.</li>
+                <li><code>transition-delay</code> - Atraso antes de iniciar.</li>
+                <li><code>transition-timing-function</code> - Velocidade (ease, linear).</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Animações:</strong> </p>
+            <ul>
+                <li><code>animation</code> - Agrupa propriedades de animação.</li>
+                <li><code>@keyframes</code> - Define etapas da animação.</li>
+                <li><code>animation-duration</code> - Duração.</li>
+                <li><code>animation-iteration-count</code> - Número de repetições.</li>
+                <li><code>animation-direction</code> - Direção (normal, reverse).</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+</body>
+</html>

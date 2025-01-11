@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <stong>Python</stong>
+        </h1>
+        <ul class="glossario">
+            <li><a href="/index.html">Início</a></li>
+        </ul>
+    </div>
+    <hr>
+    <p class="subtitulo">O Python possui uma vasta gama de comandos, funções e palavras-chave. Abaixo está uma lista organizada por
+        categorias:</p>
+    <h2 id="1-palavras-chave-keywords"><strong>1. Palavras-chave (Keywords)</strong></h2>
+    <p>Essas são palavras reservadas em Python e não podem ser usadas como identificadores (nomes de variáveis, funções,
+        etc.):</p>
+    <pre><code class="language-javascript">
+    False      await        else        import       pass
+    None       break        except      in           raise
+    True       class        finally     is           return
+    and        continue     for         lambda       try
+    as         def          from        nonlocal     while
+    assert     del          global      not          with
+    async      elif         if          or           yield
+    </code></pre>
+    <h2 id="2-funções-embutidas-built-in-functions"><strong>2. Funções Embutidas (Built-in Functions)</strong></h2>
+    <h3 id="manipulação-de-dados-e-conversões"><strong>Manipulação de Dados e Conversões</strong></h3>
+    <ul>
+        <li><code>abs()</code> - Retorna o valor absoluto.</li>
+        <li><code>bin()</code> - Converte um número para binário.</li>
+        <li><code>bool()</code> - Converte para booleano.</li>
+        <li><code>bytes()</code> - Cria um objeto bytes.</li>
+        <li><code>chr()</code> - Retorna o caractere Unicode correspondente.</li>
+        <li><code>complex()</code> - Cria números complexos.</li>
+        <li><code>dict()</code> - Cria um dicionário.</li>
+        <li><code>float()</code> - Converte para ponto flutuante.</li>
+        <li><code>hex()</code> - Converte um número para hexadecimal.</li>
+        <li><code>int()</code> - Converte para inteiro.</li>
+        <li><code>list()</code> - Cria uma lista.</li>
+        <li><code>oct()</code> - Converte para octal.</li>
+        <li><code>ord()</code> - Retorna o código Unicode de um caractere.</li>
+        <li><code>range()</code> - Gera uma sequência de números.</li>
+        <li><code>round()</code> - Arredonda um número.</li>
+        <li><code>set()</code> - Cria um conjunto.</li>
+        <li><code>str()</code> - Converte para string.</li>
+        <li><code>tuple()</code> - Cria uma tupla.</li>
+        <li><code>type()</code> - Retorna o tipo de um objeto.</li>
+    </ul>
+    <h3 id="operações-matemáticas"><strong>Operações Matemáticas</strong></h3>
+    <ul>
+        <li><code>divmod()</code> - Retorna o quociente e o resto.</li>
+        <li><code>max()</code> - Maior valor em um iterável.</li>
+        <li><code>min()</code> - Menor valor em um iterável.</li>
+        <li><code>pow()</code> - Eleva um número a uma potência.</li>
+        <li><code>sum()</code> - Soma os elementos de um iterável.</li>
+    </ul>
+    <h3 id="manipulação-de-sequências"><strong>Manipulação de Sequências</strong></h3>
+    <ul>
+        <li><code>all()</code> - Verifica se todos os elementos são verdadeiros.</li>
+        <li><code>any()</code> - Verifica se algum elemento é verdadeiro.</li>
+        <li><code>enumerate()</code> - Enumera os elementos de um iterável.</li>
+        <li><code>filter()</code> - Filtra elementos com base em uma condição.</li>
+        <li><code>len()</code> - Retorna o comprimento de um objeto.</li>
+        <li><code>map()</code> - Aplica uma função a todos os itens de um iterável.</li>
+        <li><code>sorted()</code> - Ordena elementos.</li>
+        <li><code>zip()</code> - Agrupa elementos de iteráveis.</li>
+    </ul>
+    <h3 id="entrada-e-saída"><strong>Entrada e Saída</strong></h3>
+    <ul>
+        <li><code>input()</code> - Lê dados do usuário.</li>
+        <li><code>print()</code> - Exibe informações no console.</li>
+        <li><code>open()</code> - Abre um arquivo.</li>
+    </ul>
+    <h3 id="manipulação-de-arquivos"><strong>Manipulação de Arquivos</strong></h3>
+    <ul>
+        <li><code>close()</code> - Fecha um arquivo.</li>
+        <li><code>read()</code> - Lê o conteúdo de um arquivo.</li>
+        <li><code>write()</code> - Escreve em um arquivo.</li>
+        <li><code>readline()</code> - Lê uma linha do arquivo.</li>
+    </ul>
+    <h3 id="programação-funcional"><strong>Programação Funcional</strong></h3>
+    <ul>
+        <li><code>lambda</code> - Cria funções anônimas.</li>
+        <li><code>map()</code> - Aplica uma função a todos os elementos de um iterável.</li>
+        <li><code>filter()</code> - Filtra elementos com base em uma condição.</li>
+        <li><code>reduce()</code> - Aplica uma função cumulativa (importado de <code>functools</code>).</li>
+    </ul>
+    <h3 id="funções-de-depuração-e-testes"><strong>Funções de Depuração e Testes</strong></h3>
+    <ul>
+        <li><code>assert</code> - Verifica se uma condição é verdadeira.</li>
+        <li><code>help()</code> - Mostra documentação sobre um objeto.</li>
+        <li><code>dir()</code> - Lista atributos e métodos disponíveis.</li>
+        <li><code>id()</code> - Retorna o identificador de um objeto.</li>
+        <li><code>repr()</code> - Representação em string de um objeto.</li>
+    </ul>
+    <h2 id="3-estruturas-de-controle-de-fluxo"><strong>3. Estruturas de Controle de Fluxo</strong></h2>
+    <h3 id="decisões-condicional"><strong>Decisões (Condicional)</strong></h3>
+    <pre><code class="language-javascript">    if condicao:
+        # código
+    elif outra_condicao:
+        # código
+    else:
+        # código</code></pre>
+    <h3 id="laços-de-repetição-loops"><strong>Laços de Repetição (Loops)</strong></h3>
+    <pre><code class="language-javascript">    for i in range(10):
+        # código
+
+    while condicao:
+        # código</code></pre>
+    <h3 id="controle-de-loop"><strong>Controle de Loop</strong></h3>
+    <ul>
+        <li><code>break</code> - Interrompe o loop.</li>
+        <li><code>continue</code> - Pula para a próxima iteração.</li>
+        <li><code>pass</code> - Passa sem executar nada.</li>
+    </ul>
+    <h2 id="4-estruturas-de-dados"><strong>4. Estruturas de Dados</strong></h2>
+    <ul>
+        <li><strong>Listas:</strong> <code>[1, 2, 3]</code> - Coleção ordenada e mutável.</li>
+        <li><strong>Tuplas:</strong> <code>(1, 2, 3)</code> - Coleção ordenada e imutável.</li>
+        <li><strong>Conjuntos:</strong> <code>{1, 2, 3}</code> - Coleção não ordenada e sem duplicatas.</li>
+        <li><strong>Dicionários:</strong> <code>{&quot;chave&quot;: &quot;valor&quot;}</code> - Pares chave-valor.</li>
+    </ul>
+    <h2 id="5-funções-e-classes"><strong>5. Funções e Classes</strong></h2>
+    <h3 id="definindo-funções"><strong>Definindo Funções:</strong></h3>
+    <pre><code class="language-javascript">    def minha_funcao(param1, param2):
+        return param1 + param2</code></pre>
+    <h3 id="classes-e-objetos"><strong>Classes e Objetos:</strong></h3>
+    <pre><code class="language-javascript">    class Pessoa:
+        def __init__(self, nome):
+            self.nome = nome
+
+        def saudacao(self):
+            print(f&quot;Olá, {self.nome}!&quot;)</code></pre>
+    <h2 id="6-tratamento-de-exceções"><strong>6. Tratamento de Exceções</strong></h2>
+    <pre><code class="language-javascript">    try:
+        x = 10 / 0
+    except ZeroDivisionError:
+        print(&quot;Erro: Divisão por zero.&quot;)
+    finally:
+        print(&quot;Finalizado.&quot;)</code></pre>
+    <h2 id="7-módulos-e-pacotes"><strong>7. Módulos e Pacotes</strong></h2>
+    <ul>
+        <li><strong>Importação de Módulos:</strong></li>
+    </ul>
+    <pre><code class="language-javascript">    import math
+    from random import randint
+    import os</code></pre>
+    <ul>
+        <li><strong>Principais Módulos Integrados:</strong>
+            <ul>
+                <li><code>math</code> - Funções matemáticas avançadas.</li>
+                <li><code>random</code> - Geração de números aleatórios.</li>
+                <li><code>datetime</code> - Manipulação de datas e horas.</li>
+                <li><code>os</code> - Interação com o sistema operacional.</li>
+                <li><code>sys</code> - Manipulação do sistema e argumentos.</li>
+                <li><code>re</code> - Expressões regulares.</li>
+                <li><code>json</code> - Manipulação de JSON.</li>
+                <li><code>csv</code> - Leitura e escrita em arquivos CSV.</li>
+                <li><code>sqlite3</code> - Banco de dados SQL.</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="8-manipulação-avançada"><strong>8. Manipulação Avançada</strong></h2>
+    <ul>
+        <li><strong>Compreensão de Listas (List Comprehension):</strong></li>
+    </ul>
+    <pre><code class="language-javascript">    quadrados = [x**2 for x in range(10)]</code></pre>
+    <ul>
+        <li><strong>Geradores:</strong></li>
+    </ul>
+    <pre><code class="language-javascript">    gen = (x**2 for x in range(10))</code></pre>
+    <ul>
+        <li><strong>Expressões Lambda:</strong></li>
+    </ul>
+    <pre><code class="language-javascript">    soma = lambda a, b: a + b</code></pre>
+    <hr>
+</body>
+</html>

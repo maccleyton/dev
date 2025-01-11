@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual DEV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <h1>Manual de Programação WEB</h1>
+        <ul class="glossario">
+            <li><a href="/glossario1-html.html">HTML</a></li>
+            <li><a href="/glossario2-css.html">CSS</a></li>
+            <li><a href="/glossario3-javascript.html">JavaScript</a></li>
+            <li><a href="/glossario4-python.html">Python</a></li>
+            <li><a href="/glossario5-php.html">PHP</a></li>
+        </ul>
+        </div>
+        <hr>
+    </header>
+    <main class="main-content">
+        <h2 id="1-linguagem-html">1. <strong>Linguagem HTML</strong></h2>
+        <h3 id="definição">Definição:</h3>
+        <p>HTML (HyperText Markup Language) é a linguagem de marcação utilizada para criar páginas da webe estruturar seu
+            conteúdo.
+            Ele define a estrutura e o conteúdo das páginas, utilizando uma série de elementos chamados <strong>tags</strong>.
+            Essas tags indicam ao navegador como o conteúdo deve ser exibido.</p>
+        <p>Por exemplo:</p>
+        <ul>
+            <li><strong>Estrutura básica de um documento HTML</strong>:</li>
+        </ul>
+        <pre><code class="language-javascript">    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Minha Página&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Bem-vindo ao meu site!&lt;/h1&gt;
+        &lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+        <p>O HTML foi criado em 1991, por Tim Berners-Lee, no CERN (European Council for Nuclear Research) na suíça.
+            Inicialmente o HTML foi projetado para interligar instituições de pesquisa próximas, e compartilhar documentos com
+            facilidade. Em 1992, foi liberada a biblioteca de desenvolvimento WWW ( World Wide Web), uma rede de alcance
+            mundial, que junto com o HTML proporcionou o uso em escala mundial da WEB.</p>
+        <p><strong>“Hello World” na linguagem HTML</strong></p>
+        <pre><code class="language-javascript">    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Hello, World&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+        <h3 id="componentes-principais-do-html">Componentes principais do HTML:</h3>
+        <ol>
+            <li><strong>Tags</strong>: Delimitam o início e o fim de elementos (exemplo: <code>&lt;h1&gt;</code> e
+                <code>&lt;/h1&gt;</code>).
+            </li>
+            <li><strong>Atributos</strong>: Adicionam informações extras às tags (exemplo:
+                <code>&lt;img src=&quot;imagem.jpg&quot; alt=&quot;Descrição&quot;&gt;</code>).
+            </li>
+            <li><strong>Conteúdo</strong>: O texto ou elementos aninhados entre as tags (exemplo:
+                <code>Bem-vindo ao meu site!</code> no <code>&lt;h1&gt;</code>).
+            </li>
+        </ol>
+        <h3 id="exemplos-de-tags-comuns">Exemplos de tags comuns:</h3>
+        <ul>
+            <li><strong>Estruturais</strong>: <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>.
+            </li>
+            <li><strong>Títulos</strong>: <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> (cabeçalhos de diferentes tamanhos).
+            </li>
+            <li><strong>Texto</strong>: <code>&lt;p&gt;</code> (parágrafo), <code>&lt;strong&gt;</code> (negrito),
+                <code>&lt;em&gt;</code> (itálico).
+            </li>
+            <li><strong>Links e imagens</strong>: <code>&lt;a&gt;</code> (link), <code>&lt;img&gt;</code> (imagem).</li>
+            <li><strong>Listas</strong>: <code>&lt;ul&gt;</code> (não ordenada), <code>&lt;ol&gt;</code> (ordenada),
+                <code>&lt;li&gt;</code> (itens da lista).
+            </li>
+            <li><strong>Tabelas</strong>: <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>.</li>
+        </ul>
+        <h3 id="por-que-o-html-é-importante">Por que o HTML é importante?</h3>
+        <p>Ele é a base de qualquer página da web e, junto com CSS (responsável pelo design) e JavaScript (responsável por
+            interatividade), forma a base do desenvolvimento web.</p>
+        <hr>
+
+        <h2 id="2-linguagem-CSS">2. <strong>Linguagem CSS</strong></h2>
+        <h3 id="definição">Definição:</h3>
+        <p><strong>CSS (Cascading Style Sheets)</strong> é uma linguagem de estilo usada para descrever a apresentação de um
+            documento escrito em HTML ou XML (incluindo suas variantes, como XHTML). Ele controla como os elementos da página
+            serão exibidos visualmente no navegador, permitindo separar o conteúdo (HTML) do design (CSS).</p>
+        <p>CSS é fundamental no desenvolvimento web, pois transforma páginas simples em experiências visuais ricas e dinâmicas.
+        </p>
+        <h3 id="como-o-css-funciona">Como o CSS funciona?</h3>
+        <p>O CSS trabalha com &quot;regras&quot; aplicadas aos elementos do HTML. Cada regra consiste em:</p>
+        <ol>
+            <li><strong>Seletor</strong>: Indica qual elemento será estilizado (exemplo: <code>p</code> para parágrafos).</li>
+            <li><strong>Declarações</strong>: São compostas por propriedades e valores, definindo os estilos desejados (exemplo:
+                <code>color: blue;</code> para definir a cor do texto como azul).
+            </li>
+        </ol>
+        <h4 id="exemplo-de-css">Exemplo de CSS:</h4>
+        <pre><code class="language-javascript">    p {
+        color: blue; /* Define a cor do texto como azul */
+        font-size: 16px; /* Define o tamanho da fonte */
+    }</code></pre>
+        <p>Quando esse código CSS é aplicado a um parágrafo em HTML, ele altera sua aparência conforme as regras especificadas.
+        </p>
+        <h3 id="formas-de-usar-css">Formas de usar CSS:</h3>
+        <ol>
+            <li><strong>Inline</strong>: O estilo é adicionado diretamente no elemento HTML usando o atributo
+                <code>style</code>.
+            </li>
+        </ol>
+        <pre><code class="language-javascript">    &lt;p style=&quot;color: red;&quot;&gt;Este parágrafo está em vermelho.&lt;/p&gt;</code></pre>
+        <ol start="2">
+            <li><strong>Interno</strong>: O CSS é definido dentro de uma tag <code>&lt;style&gt;</code> no cabeçalho do
+                documento HTML.</li>
+        </ol>
+        <pre><code class="language-javascript">    &lt;html&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            p {
+                color: green;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;Este parágrafo está em verde.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+        <ol start="3">
+            <li>
+                <p><strong>Externo</strong>: O CSS é escrito em um arquivo separado com extensão <code>.css</code>, e o HTML o
+                    referencia.</p>
+                <p><em>3.1. Arquivo CSS (<code>estilos.css</code>)</em>:</p>
+        <pre><code class="language-javascript">    body {
+        background-color: lightgray;
+    }
+    h1 {
+        color: navy;
+    }</code></pre>
+                <p><em>3.2. Arquivo HTML</em>:</p>
+        <pre><code class="language-javascript">    &lt;html&gt;
+    &lt;head&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;estilos.css&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+         &lt;h1&gt;Minha Página&lt;/h1&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+            </li>
+        </ol>
+        <h3 id="principais-funcionalidades-do-css">Principais funcionalidades do CSS:</h3>
+        <ul>
+            <li><strong>Cores e fundos</strong>: Altera cores de texto, planos de fundo e bordas.</li>
+        </ul>
+        <pre><code class="language-javascript">    background-color: yellow; color: black;</code></pre>
+        <ul>
+            <li><strong>Fontes e texto</strong>: Controla estilos de fonte, alinhamento, espaçamento e decoração.</li>
+        </ul>
+        <pre><code class="language-javascript">    font-family: Arial, sans-serif; text-align: center;</code></pre>
+        <ul>
+            <li><strong>Layout</strong>: Gerencia o posicionamento e o espaçamento de elementos.</li>
+        </ul>
+        <pre><code class="language-javascript">    margin: 10px; padding: 20px;</code></pre>
+        <ul>
+            <li><strong>Responsividade</strong>: Torna as páginas adaptáveis a diferentes tamanhos de tela.</li>
+        </ul>
+        <pre><code class="language-javascript">    @media (max-width: 600px) {
+        body {
+            font-size: 14px;
+        }
+    }</code></pre>
+        <h3 id="por-que-o-css-é-importante">Por que o CSS é importante?</h3>
+        <ul>
+            <li>Ele separa o design do conteúdo, facilitando a manutenção.</li>
+            <li>Permite criar páginas modernas, responsivas e visuais atraentes.</li>
+            <li>Dá flexibilidade para personalizar a aparência de qualquer elemento da página.</li>
+        </ul>
+        <hr>
+
+        <h2 id="3-linguagem-javascript">3. <strong>Linguagem JavaScript</strong></h2>
+        <h3 id="definição">Definição:</h3>
+        <p>JavaScript é uma linguagem de programação amplamente usada para tornar páginas da web interativas e dinâmicas.
+            Enquanto HTML define a estrutura e CSS define o estilo, o JavaScript adiciona funcionalidade e comportamento,
+            permitindo que os sites façam coisas como responder a cliques de botões, atualizar conteúdo sem recarregar a página
+            ou até criar animações.</p>
+        <p><strong>“Hello World” na linguagem de programação JavaScript</strong> </p>
+        <pre><code class="language-javascript">    console.log(&quot;Hello, World!&quot;);</code></pre>
+        <h3 id="principais-características-do-javascript">Principais características do JavaScript:</h3>
+        <ol>
+            <li><strong>Dinâmico</strong>: Pode alterar elementos de uma página HTML em tempo real, como modificar texto,
+                estilos ou adicionar novos elementos.</li>
+            <li><strong>Baseado em eventos</strong>: Reage a ações do usuário, como cliques, digitação, rolagem ou envio de
+                formulários.</li>
+            <li><strong>Amplo uso</strong>: Embora seja mais famoso no desenvolvimento web, também pode ser usado em servidores
+                (Node.js), aplicativos móveis e até automação.</li>
+        </ol>
+        <h3 id="como-funciona-o-javascript">Como funciona o JavaScript?</h3>
+        <p>O JavaScript é integrado ao HTML e geralmente executado diretamente no navegador do usuário. Ele pode ser adicionado
+            de três formas:</p>
+        <ol start="1">
+            <li><strong>Inline</strong>: Escrito diretamente no elemento HTML usando o atributo <code>onclick</code> ou similar:</li>
+        </ol>
+        <pre><code class="language-javascript">    &lt;button onclick=&quot;alert(&#39;Olá!&#39;)&quot;&gt;Clique aqui&lt;/button&gt;</code></pre>
+        <ol start="2">
+            <li><strong>Interno</strong>: Inserido em uma tag<code>&lt;script&gt;</code> dentro do HTML:</li>
+        </ol>
+        <pre><code class="language-javascript">    &lt;html&gt;
+    &lt;head&gt;
+        &lt;script&gt;
+            function mostrarMensagem() {
+                alert(&quot;Olá, mundo!&quot;);
+            }
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;button onclick=&quot;mostrarMensagem()&quot;&gt;Clique aqui&lt;/button&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+        <ol start="3">
+            <li><strong>Externo</strong>: Em um arquivo<code>.js</code> separado, vinculado ao HTML com <code>&lt;script&gt;</code>:
+            <p><em>3.1. Arquivo <code>script.js</code></em>:</p>
+            <pre><code class="language-javascript">    function mostrarMensagem() {
+        alert(&quot;Olá, mundo!&quot;);
+    }</code></pre>
+            <p><em>3.2. Arquivo HTML</em>:</p>
+            <pre><code class="language-javascript">    &lt;html&gt;
+    &lt;head&gt;
+        &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;button onclick=&quot;mostrarMensagem()&quot;&gt;Clique aqui&lt;/button&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+                </li>
+            </ol>
+        <h3 id="o-que-o-javascript-pode-fazer">O que o JavaScript pode fazer?</h3>
+        <ul>
+            <li><strong>Interatividade</strong>:<ul>
+                    <li>Mostrar ou esconder elementos.</li>
+                    <li>Validar formulários (ex.: garantir que o e-mail está no formato correto).</li>
+                </ul><br>
+            </li>
+            <li><strong>Atualização dinâmica</strong>:<ul>
+                    <li>Atualizar partes de uma página sem recarregá-la (ex.: comentários em tempo real).</li>
+                    <li>Trabalhar com APIs para buscar dados (ex.: previsão do tempo, cotações de moedas).</li>
+                </ul><br>
+            </li>
+            <li><strong>Efeitos visuais</strong>:<ul>
+                    <li>Animações e transições.</li>
+                    <li>Controle de sliders e galerias de imagens.</li>
+                </ul><br>
+            </li>
+            <li><strong>Armazenamento local</strong>:<ul>
+                    <li>Salvar informações no navegador do usuário (ex.: preferências de tema ou dados temporários).</li>
+                </ul>
+            </li>
+        </ul>
+        <h3 id="exemplo-básico">Exemplo básico:</h3>
+        <p>Um contador que aumenta ao clicar em um botão:</p>
+        <pre><code class="language-javascript">    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Exemplo de JavaScript&lt;/title&gt;
+        &lt;script&gt;
+            let contador = 0;
+            function incrementar() {
+                contador++;
+                document.getElementById(&quot;contador&quot;).innerText = contador;
+            }
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Contador: &lt;span id=&quot;contador&quot;&gt;0&lt;/span&gt;&lt;/h1&gt;
+        &lt;button onclick=&quot;incrementar()&quot;&gt;Incrementar&lt;/button&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+        <h3 id="por-que-o-javascript-é-importante">Por que o JavaScript é importante?</h3>
+        <ul>
+            <li>Ele transforma páginas estáticas em experiências interativas e envolventes.</li>
+            <li>É amplamente suportado por navegadores e possui uma grande comunidade de desenvolvedores.</li>
+            <li>É a base de várias bibliotecas e frameworks populares, como React, Angular e Vue.js.</li>
+        </ul>
+        <hr>
+
+        <h2 id="4-linguagem-python">4. <strong>Linguagem Python</strong></h2>
+        <h3 id="definição">Definição:</h3>
+        <p>Python é uma linguagem de programação de alto nível, versátil e fácil de aprender, usada para uma ampla variedade de
+            aplicações, como desenvolvimento web, automação, análise de dados, inteligência artificial, e muito mais. Criada por
+            <strong>Guido van Rossum</strong> em 1991, Python é conhecido por sua sintaxe simples e clara, o que a torna uma das
+            linguagens preferidas tanto para iniciantes quanto para programadores experientes.
+        </p>
+        <h3 id="principais-características-do-python">Principais características do Python:</h3>
+        <ol>
+            <li><strong>Simplicidade</strong>: Sua sintaxe é projetada para ser legível e intuitiva.</li>
+            <li><strong>Versatilidade</strong>: Pode ser usada para desenvolver aplicativos web, scripts de automação, análise
+                de dados, aprendizado de máquina, entre outros.</li>
+            <li><strong>Bibliotecas poderosas</strong>: Possui milhares de bibliotecas e frameworks para praticamente qualquer
+                tarefa.<ul>
+                    <li>Exemplo: <code>NumPy</code> para matemática, <code>Pandas</code> para dados, <code>Django</code> para
+                        web, <code>TensorFlow</code> para IA.</li>
+                </ul>
+            </li>
+            <li><strong>Interpretada</strong>: O código é executado linha por linha, sem necessidade de compilação, tornando
+                mais fácil testar e corrigir erros.</li>
+            <li><strong>Comunidade ativa</strong>: Python tem uma comunidade global que contribui com ferramentas, bibliotecas e
+                suporte.</li>
+        </ol>
+        <h3 id="por-que-python-é-tão-popular">Por que Python é tão popular?</h3>
+        <ul>
+            <li><strong>Fácil para iniciantes</strong>: Ótimo para aprender lógica de programação sem se preocupar com sintaxe
+                complicada.</li>
+            <li><strong>Multiplataforma</strong>: Funciona em Windows, Mac e Linux.</li>
+            <li><strong>Ampla aplicação</strong>: Pode ser usado em diferentes áreas, como desenvolvimento web, automação,
+                ciência de dados, robótica, e até jogos.</li>
+        </ul>
+        <h3 id="exemplo-de-código-em-python">Exemplo de código em Python:</h3>
+        <ol start="1">
+            <li><strong>“Hello World” na linguagem de programação Pyhton</strong></li>
+        </ol><pre><code class="language-javascript">    print(&quot;Hello, World!&quot;)</code></pre>
+        <ol start="2">
+            <li><strong>Outro exemplo: cálculo de soma</strong></li>
+        </ol><pre><code class="language-javascript">    # Solicita dois números do usuário
+    num1 = int(input(&quot;Digite o primeiro número: &quot;))
+    num2 = int(input(&quot;Digite o segundo número: &quot;))
+    # Calcula a soma e exibe o resultado
+    soma = num1 + num2
+    print(&quot;A soma é:&quot;, soma)</code></pre>
+        <h3 id="aplicações-do-python">Aplicações do Python:</h3>
+        <ol>
+            <li><strong>Automação de Tarefas (Scripts)</strong>:<ul>
+                    <li>Exemplo: Renomear arquivos em massa, enviar e-mails automáticos.</li>
+                </ul>
+            </li>
+            <li><strong>Desenvolvimento Web</strong>:<ul>
+                    <li>Usando frameworks como Django e Flask.</li>
+                </ul>
+            </li>
+            <li><strong>Ciência de Dados e IA</strong>:<ul>
+                    <li>Processamento de grandes volumes de dados, criação de modelos de aprendizado de máquina com bibliotecas
+                        como <code>TensorFlow</code> e <code>Scikit-learn</code>.</li>
+                </ul>
+            </li>
+            <li><strong>Desenvolvimento de Jogos</strong>:<ul>
+                    <li>Usando bibliotecas como <code>Pygame</code>.</li>
+                </ul>
+            </li>
+            <li><strong>Administração de Sistemas</strong>:<ul>
+                    <li>Ferramentas para monitorar servidores, gerenciar arquivos, entre outros.</li>
+                </ul>
+            </li>
+        </ol>
+        <h3 id="como-começar-com-python">Como começar com Python?</h3>
+        <ol>
+            <li><strong>Instale o Python</strong>:<ul>
+                    <li>Já mencionou que tem Python instalado. Ótimo! 😊</li>
+                </ul>
+            </li>
+            <li><strong>Escolha uma IDE ou Editor de Código</strong>:<ul>
+                    <li>Pode usar o IDLE (vem com Python), VS Code, PyCharm ou qualquer editor de texto.</li>
+                </ul>
+            </li>
+            <li><strong>Execute um código simples</strong>:<ul>
+                    <li>Crie um arquivo com extensão <code>.py</code> e execute-o no terminal.</li>
+                </ul>
+            </li>
+        </ol><pre><code class="language-javascript">       print(&quot;Bem-vindo ao Python!&quot;)</code></pre>
+        <hr>
+
+        <h2 id="5-linguagem-php">5. <strong>Linguagem PHP</strong></h2>
+        <h3 id="definição">Definição:</h3>
+        <p>O PHP (Hypertext Preprocessor) é uma linguagem de programação interpretada e de código aberto, especialmente
+            projetada para o desenvolvimento de aplicações web. Ele é executado no servidor e permite criar páginas dinâmicas
+            que interagem com bancos de dados, processam formulários e gerenciam sessões de usuários.</p>
+        <p><strong>“Hello World” na linguagem de programação PHP</strong></p>
+        <pre><code class="language-javascript">    &lt;?php
+    echo &quot;Hello, World!&quot;;
+    ?&gt;</code></pre>
+        <h3 id="características-principais-do-php">Características principais do PHP:</h3>
+        <ol>
+            <li><strong>Linguagem Server-Side</strong>: O código é processado no servidor e o resultado é enviado ao navegador
+                como HTML.</li>
+            <li><strong>Fácil de aprender</strong>: A sintaxe é simples e amigável para iniciantes.</li>
+            <li><strong>Compatível com vários sistemas</strong>: Funciona em servidores Linux, Windows, macOS e outros.</li>
+            <li><strong>Alta integração</strong>: Funciona bem com HTML, CSS, JavaScript e a maioria dos bancos de dados, como
+                MySQL, PostgreSQL e SQLite.</li>
+            <li><strong>Ampla utilização</strong>: Muitas plataformas populares, como WordPress, Joomla e Drupal, são
+                construídas em PHP.</li>
+        </ol>
+        <h3 id="por-que-usar-php">Por que usar PHP?</h3>
+        <ul>
+            <li>Ele é ideal para criar sites dinâmicos e interativos.</li>
+            <li>Suporta diversas funções nativas para acesso a bancos de dados, manipulação de arquivos, autenticação de
+                usuários, entre outros.</li>
+            <li>Tem uma enorme comunidade, com muitos tutoriais, extensões e suporte.</li>
+        </ul>
+        <h3 id="como-funciona-o-php">Como funciona o PHP?</h3>
+        <ol>
+            <li>O código PHP é escrito em um arquivo com extensão <code>.php</code>.</li>
+            <li>Quando um cliente (navegador) solicita a página, o servidor executa o PHP.</li>
+            <li>O servidor gera o HTML resultante e o envia ao navegador.</li>
+        </ol>
+        <h3 id="exemplo-de-código-php">Exemplo de código PHP:</h3>
+        <ul>
+            <li><strong>Exemplo 1: &quot;Olá, mundo!&quot;</strong>
+            <pre><code class="language-javascript">    &lt;?php
+    echo &quot;Olá, mundo!&quot;;
+    ?&gt;</code></pre>
+            <p>Quando você salva esse código em um arquivo chamado <code>index.php</code> e o executa em um servidor com suporte a
+            PHP, ele exibirá &quot;Olá, mundo!&quot; no navegador.</p>
+            </li>
+            <li><strong>Exemplo 2: Processando um formulário</strong>
+            <pre><code class="language-javascript">    &lt;form method=&quot;post&quot; action=&quot;processar.php&quot;&gt;
+        Nome: &lt;input type=&quot;text&quot; name=&quot;nome&quot;&gt;
+        &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+    &lt;/form&gt;</code></pre>
+            <p margin="10px">Arquivo <code>processar.php</code>:</p>
+            <pre><code class="language-javascript">    &lt;?php
+    $nome = $_POST[&#39;nome&#39;];
+    echo &quot;Olá, &quot; . htmlspecialchars($nome) . &quot;!&quot;;
+    ?&gt;</code></pre>
+            </li>
+        </ul>
+        <h3 id="aplicações-do-php">Aplicações do PHP:</h3>
+        <ol>
+            <li><strong>Desenvolvimento de Sites Dinâmicos</strong>:<ul>
+                    <li>Exibir conteúdos que mudam com base no usuário ou banco de dados.</li>
+                </ul>
+            </li>
+            <li><strong>Sistemas de Gestão de Conteúdo (CMS)</strong>:<ul>
+                    <li>Plataformas como WordPress são construídas em PHP.</li>
+                </ul>
+            </li>
+            <li><strong>Interação com Bancos de Dados</strong>:<ul>
+                    <li>Consultas e manipulação de dados com SQL.</li>
+                </ul>
+            </li>
+            <li><strong>Gerenciamento de Sessões e Usuários</strong>:<ul>
+                    <li>Login, autenticação e gerenciamento de sessões.</li>
+                </ul>
+            </li>
+            <li><strong>APIs</strong>:<ul>
+                    <li>Criar e consumir APIs para integração entre sistemas.</li>
+                </ul>
+            </li>
+        </ol>
+        <h3 id="vantagens-do-php">Vantagens do PHP:</h3>
+        <ul>
+            <li><strong>Popularidade</strong>: Muitos sites e sistemas web usam PHP, tornando fácil encontrar recursos e
+                suporte.</li>
+            <li><strong>Flexibilidade</strong>: Pode ser usado para projetos simples e complexos.</li>
+            <li><strong>Bibliotecas e Frameworks</strong>: Ferramentas como Laravel, Symfony e CodeIgniter aceleram o
+                desenvolvimento.</li>
+        </ul>
+        <h3 id="considerações">Considerações:</h3>
+        <p>Embora o PHP tenha sido criticado por problemas de segurança e por ser considerado ultrapassado por alguns, ele
+            continua evoluindo e sendo usado em projetos modernos. A versão mais recente do PHP traz melhorias significativas em
+            desempenho e segurança.</p>
+        <hr>
+    </main>
+    <section class="botoes">
+        <div id="container-botoes">
+            <h2>Links de Ajuda</h2>
+            <ul class="ul-style-2">
+                <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">Github</a></li>
+                <li><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Chat GPT</a></li>
+                <li><a href="https://cssgradient.io/gradient-backgrounds/" target="_blank" rel="noopener noreferrer">CSS
+                        Gradient Backgrounds</a></li>
+                <li><a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a></li>
+                <li><a href="https://www.fronteditor.dev/" target="_blank" rel="noopener noreferrer">Front Editor</a></li>
+                <li><a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a></li>
+                <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN</a></li>
+                <li><a href="https://devdocs.io/" target="_blank" rel="noopener noreferrer">DevDocs</a></li>
+                <li><a href="https://www.notion.com/" target="_blank" rel="noopener noreferrer">Notion</a></li>
+                <li><a href="https://whimsical.com/" target="_blank" rel="noopener noreferrer">Whimsical</a></li>
+                <li><a href="https://www.tldraw.com/" target="_blank" rel="noopener noreferrer">TL Draw</a></li>
+                <li><a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">Figma</a></li>
+                <li><a href="https://ionic.io/ionicons" target="_blank" rel="noopener noreferrer">Ion Icons</a></li>
+                <li><a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">Markup Validation Service</a>
+                <li><a href="https://codebeautify.org/markdown-to-html" target="_blank" rel="noopener noreferrer">Markdown to HTML</a>
+                </li>
+                <li><a href="https://tinkercad.com/" target="_blank" rel="noopener noreferrer">Tinkercad</a></li>
+                <li><a href="https://www.geogebra.org/" target="_blank" rel="noopener noreferrer">GeoGebra</a></li>
+                <li><a href="https://www.calculadoraonline.com.br/" target="_blank" rel="noopener noreferrer">Calculadora
+                        On-line</a></li>
+            </ul>
+            <div id="social-links">
+                <a href="https://github.com/maccleyton" target="_blank" rel="noopener noreferrer" aria-label="Github"><ion-icon
+                        name="logo-github"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/maccleyton/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://instagram.com/maccleyton" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://facebook.com/maccleyton" target="_blank" rel="noopener noreferrer"
+                    aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+            </div>
+        </div>
+        <footer>
+            Desenvolvido por Cleyton Duda Macedo
+        </footer>
+    </section>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="./script.js"></script>
+</body>
+</html>
+   

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <stong>PHP - Hypertext Preprocessor</stong>
+        </h1>
+        <ul class="glossario">
+            <li><a href="/index.html">Início</a></li>
+        </ul>
+    </div>
+    <hr>
+    <p class="subtitulo">Aqui está uma lista abrangente dos <strong>comandos, funções e palavras-chave possíveis no PHP</strong>, organizados
+        por categorias:</p>
+    <h2 id="1-palavras-chave-reservadas-keywords"><strong>1. Palavras-chave Reservadas (Keywords)</strong></h2>
+    <p>Essas palavras são reservadas e não podem ser usadas como identificadores (nomes de variáveis, funções, classes,
+        etc.):</p>
+    <pre><code class="language-javascript">
+    abstract       and           as               break            case
+    catch          class         clone            const            continue
+    declare        default       do               else             elseif
+    enddeclare     endfor        endforeach       endif            endswitch
+    endwhile       extends       final            finally          for
+    foreach        function      global           goto             if
+    implements     include       include_once     instanceof       insteadof
+    interface      namespace     new              or               private
+    protected      public        require          require_once     return
+    static         switch        throw            trait            try
+    use            var           while            xor              yield
+    </code></pre>
+    <h2 id="2-operadores"><strong>2. Operadores</strong></h2>
+    <h3 id="operadores-aritméticos"><strong>Operadores Aritméticos:</strong></h3>
+    <ul>
+        <li><code>+</code> - Adição</li>
+        <li><code>-</code> - Subtração</li>
+        <li><code>*</code> - Multiplicação</li>
+        <li><code>/</code> - Divisão</li>
+        <li><code>%</code> - Módulo</li>
+        <li><code>**</code> - Exponenciação</li>
+    </ul>
+    <h3 id="operadores-de-comparação"><strong>Operadores de Comparação:</strong></h3>
+    <ul>
+        <li><code>==</code> - Igual</li>
+        <li><code>===</code> - Idêntico (valor e tipo)</li>
+        <li><code>!=</code> ou <code>&lt;&gt;</code> - Diferente</li>
+        <li><code>!==</code> - Não idêntico</li>
+        <li><code>&lt;</code> - Menor que</li>
+        <li><code>&gt;</code> - Maior que</li>
+        <li><code>&lt;=</code> - Menor ou igual</li>
+        <li><code>&gt;=</code> - Maior ou igual</li>
+    </ul>
+    <h3 id="operadores-lógicos"><strong>Operadores Lógicos:</strong></h3>
+    <ul>
+        <li><code>&amp;&amp;</code> - E lógico</li>
+        <li><code>||</code> - Ou lógico</li>
+        <li><code>!</code> - Não lógico</li>
+        <li><code>and</code> - E lógico com menor precedência</li>
+        <li><code>or</code> - Ou lógico com menor precedência</li>
+        <li><code>xor</code> - Ou exclusivo</li>
+    </ul>
+    <h3 id="operadores-de-atribuição"><strong>Operadores de Atribuição:</strong></h3>
+    <ul>
+        <li><code>=</code> - Atribuição</li>
+        <li><code>+=</code> - Adição e atribuição</li>
+        <li><code>-=</code> - Subtração e atribuição</li>
+        <li><code>*=</code> - Multiplicação e atribuição</li>
+        <li><code>/=</code> - Divisão e atribuição</li>
+        <li><code>%=</code> - Módulo e atribuição</li>
+    </ul>
+    <h3 id="outros-operadores"><strong>Outros Operadores:</strong></h3>
+    <ul>
+        <li><code>.</code> - Concatenação de strings</li>
+        <li><code>=&gt;</code> - Associação em arrays</li>
+        <li><code>??</code> - Operador de coalescência nula</li>
+        <li><code>?:</code> - Operador ternário</li>
+    </ul>
+    <h2 id="3-estruturas-de-controle"><strong>3. Estruturas de Controle</strong></h2>
+    <h3 id="condicionais"><strong>Condicionais:</strong></h3>
+    <pre><code class="language-javascript">    if ($x &gt; 0) {
+        echo &quot;Positivo&quot;;
+    } elseif ($x &lt; 0) {
+        echo &quot;Negativo&quot;;
+    } else {
+        echo &quot;Zero&quot;;
+    }</code></pre>
+    <h3 id="switch"><strong>Switch:</strong></h3>
+    <pre><code class="language-javascript">    switch ($x) {
+        case 1:
+            echo &quot;Um&quot;;
+            break;
+        case 2:
+            echo &quot;Dois&quot;;
+            break;
+        default:
+            echo &quot;Outro&quot;;
+    }</code></pre>
+    <h3 id="laços-de-repetição"><strong>Laços de Repetição:</strong></h3>
+    <pre><code class="language-javascript">    for ($i = 0; $i &lt; 10; $i++) {
+        echo $i;
+    }
+
+    while ($i &lt; 10) {
+        echo $i++;
+    }
+
+    do {
+        echo $i++;
+    } while ($i &lt; 10);
+
+    foreach ($array as $key =&gt; $value) {
+        echo &quot;$key =&gt; $value&quot;;
+    }</code></pre>
+    <h2 id="4-funções-para-manipulação-de-strings"><strong>4. Funções para Manipulação de Strings</strong></h2>
+    <ul>
+        <li><code>strlen()</code> - Retorna o comprimento de uma string.</li>
+        <li><code>strpos()</code> - Procura a posição de uma substring.</li>
+        <li><code>substr()</code> - Extrai uma parte de uma string.</li>
+        <li><code>str_replace()</code> - Substitui partes de uma string.</li>
+        <li><code>trim()</code> - Remove espaços em branco.</li>
+        <li><code>explode()</code> - Divide uma string em array.</li>
+        <li><code>implode()</code> - Junta elementos de um array em string.</li>
+        <li><code>strtolower()</code> - Converte para minúsculas.</li>
+        <li><code>strtoupper()</code> - Converte para maiúsculas.</li>
+    </ul>
+    <h2 id="5-funções-para-arrays"><strong>5. Funções para Arrays</strong></h2>
+    <ul>
+        <li><code>array()</code> - Cria um array.</li>
+        <li><code>count()</code> - Conta os elementos.</li>
+        <li><code>array_push()</code> - Adiciona elementos no final.</li>
+        <li><code>array_pop()</code> - Remove o último elemento.</li>
+        <li><code>array_shift()</code> - Remove o primeiro elemento.</li>
+        <li><code>array_unshift()</code> - Adiciona elementos no início.</li>
+        <li><code>array_merge()</code> - Mescla arrays.</li>
+        <li><code>array_key_exists()</code> - Verifica se uma chave existe.</li>
+        <li><code>in_array()</code> - Verifica se um valor existe no array.</li>
+        <li><code>sort()</code> - Ordena os valores.</li>
+        <li><code>rsort()</code> - Ordena em ordem decrescente.</li>
+        <li><code>asort()</code> - Ordena preservando as chaves.</li>
+        <li><code>ksort()</code> - Ordena pelas chaves.</li>
+    </ul>
+    <h2 id="6-manipulação-de-arquivos"><strong>6. Manipulação de Arquivos</strong></h2>
+    <ul>
+        <li><code>fopen()</code> - Abre um arquivo.</li>
+        <li><code>fclose()</code> - Fecha um arquivo.</li>
+        <li><code>fwrite()</code> - Escreve em um arquivo.</li>
+        <li><code>fread()</code> - Lê o conteúdo de um arquivo.</li>
+        <li><code>file_get_contents()</code> - Lê todo o conteúdo de um arquivo.</li>
+        <li><code>file_put_contents()</code> - Escreve em um arquivo.</li>
+        <li><code>unlink()</code> - Exclui um arquivo.</li>
+    </ul>
+    <h2 id="7-manipulação-de-datas"><strong>7. Manipulação de Datas</strong></h2>
+    <ul>
+        <li><code>date()</code> - Formata a data e hora.</li>
+        <li><code>time()</code> - Retorna o timestamp atual.</li>
+        <li><code>strtotime()</code> - Converte string para timestamp.</li>
+        <li><code>mktime()</code> - Cria um timestamp.</li>
+    </ul>
+    <h2 id="8-funções-para-manipulação-de-variáveis"><strong>8. Funções para Manipulação de Variáveis</strong></h2>
+    <ul>
+        <li><code>isset()</code> - Verifica se a variável foi definida.</li>
+        <li><code>unset()</code> - Remove uma variável.</li>
+        <li><code>empty()</code> - Verifica se está vazia.</li>
+        <li><code>is_array()</code> - Verifica se é array.</li>
+        <li><code>is_numeric()</code> - Verifica se é numérico.</li>
+        <li><code>is_string()</code> - Verifica se é string.</li>
+        <li><code>is_object()</code> - Verifica se é objeto.</li>
+        <li><code>gettype()</code> - Retorna o tipo de variável.</li>
+        <li><code>settype()</code> - Define o tipo de variável.</li>
+    </ul>
+    <h2 id="9-funções-para-banco-de-dados-mysqli"><strong>9. Funções para Banco de Dados (MySQLi)</strong></h2>
+    <ul>
+        <li><code>mysqli_connect()</code> - Conecta ao banco de dados.</li>
+        <li><code>mysqli_query()</code> - Executa uma query.</li>
+        <li><code>mysqli_fetch_assoc()</code> - Obtém resultados como array associativo.</li>
+        <li><code>mysqli_fetch_array()</code> - Obtém resultados como array.</li>
+        <li><code>mysqli_num_rows()</code> - Retorna o número de linhas.</li>
+        <li><code>mysqli_close()</code> - Fecha a conexão.</li>
+    </ul>
+    <h2 id="10-classes-e-objetos"><strong>10. Classes e Objetos</strong></h2>
+    <h3 id="definindo-classes"><strong>Definindo Classes:</strong></h3>
+    <pre><code class="language-javascript">    class Pessoa {
+        public $nome;
+
+        public function __construct($nome) {
+            $this-&gt;nome = $nome;
+        }
+
+        public function saudacao() {
+            return &quot;Olá, &quot; . $this-&gt;nome;
+        }
+    }
+
+    $pessoa = new Pessoa(&quot;João&quot;);
+    echo $pessoa-&gt;saudacao();</code></pre>
+    <h2 id="11-tratamento-de-exceções"><strong>11. Tratamento de Exceções</strong></h2>
+    <pre><code class="language-javascript">    try {
+        throw new Exception(&quot;Erro!&quot;);
+    } catch (Exception $e) {
+        echo $e-&gt;getMessage();
+    } finally {
+        echo &quot;Finalizado.&quot;;
+    }</code></pre>
+    <hr>
+</body>
+</html>

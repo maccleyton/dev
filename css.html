@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3 id="principais-características-do-css"><strong>Principais Características do CSS</strong></h4>
+    <ol>
+        <li><strong>Estilo e Aparência:</strong>
+            <ul>
+                <li>Define cores, fontes, tamanhos, margens, espaçamentos, bordas, alinhamentos, entre outros aspectos
+                    visuais.</li>
+                <li>Exemplo:</li>
+            </ul>
+        </li>
+    </ol>
+    <pre><code>body {
+                background-color: lightblue;
+                font-family: Arial, sans-serif;
+            }
+            </code></pre>
+    <ol start="2">
+        <li><strong>Responsividade:</strong>
+            <ul>
+                <li>Permite criar layouts adaptáveis a diferentes dispositivos (desktop, tablet, celular).</li>
+                <li>Exemplo usando media queries:</li>
+            </ul>
+        </li>
+    </ol>
+    <pre><code>@media (max-width: 768px) {
+                body {
+                    font-size: 14px;
+                }
+            }
+            </code></pre>
+    <ol start="3">
+        <li>
+            <p><strong>Cascading (Cascata):</strong> </p>
+            <ul>
+                <li>As regras de estilo são aplicadas em ordem de prioridade, com base em especificidade, origem e ordem no
+                    código.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Reutilização e Manutenção:</strong> </p>
+            <ul>
+                <li>Facilita a aplicação de estilos consistentes em várias páginas ou elementos ao mesmo tempo.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Animações e Interatividade:</strong> </p>
+            <ul>
+                <li>Suporte para animações, transições e transformações.</li>
+                <li>Exemplo:</li>
+            </ul>
+        </li>
+    </ol>
+    <pre><code>button {
+                transition: background-color 0.3s ease;
+            } button:hover {
+                background-color: green;
+            }
+            </code></pre>
+    <hr>
+    <h3 id="tipos-de-css"><strong>Tipos de CSS</strong></h3>
+    <ol>
+        <li><strong>Inline CSS:</strong>
+            <ul>
+                <li>Definido diretamente no atributo <code>style</code> de um elemento HTML.</li>
+                <li>Exemplo:</li>
+            </ul>
+        </li>
+    </ol>
+    <pre><code>&lt;p style=&quot;color: red;&quot;&gt;Texto em vermelho&lt;/p&gt;
+            </code></pre>
+    <ol start="2">
+        <li><strong>Internal CSS:</strong>
+            <ul>
+                <li>Adicionado dentro de uma tag <code>&lt;style&gt;</code> no cabeçalho do HTML.</li>
+                <li>Exemplo:</li>
+            </ul>
+        </li>
+    </ol>
+    <pre><code>&lt;style&gt;   p {     color: blue;   } &lt;/style&gt;
+            </code></pre>
+    <ol start="3">
+        <li><strong>External CSS:</strong>
+            <ul>
+                <li>Armazenado em um arquivo externo com extensão <code>.css</code> e vinculado ao HTML através de uma tag
+                    <code>&lt;link&gt;</code>.
+                </li>
+                <li>Exemplo:</li>
+            </ul>
+        </li>
+    </ol>
+    <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+            </code></pre>
+    <hr>
+    <h3 id="vantagens-do-css"><strong>Vantagens do CSS</strong></h3>
+    <ul>
+        <li><strong>Separação de conteúdo e apresentação:</strong> Facilita a manutenção e atualização.</li>
+        <li><strong>Reutilização de estilos:</strong> Um arquivo CSS pode ser reutilizado em várias páginas.</li>
+        <li><strong>Customização avançada:</strong> Permite criar designs complexos com animações e layouts sofisticados.
+        </li>
+        <li><strong>Compatibilidade:</strong> Suportado por todos os navegadores modernos.</li>
+    </ul>
+    <hr>
+    <h3 id="exemplo-simples"><strong>Exemplo Simples</strong></h3>
+    <p>Arquivo HTML:</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Bem-vindo ao CSS!&lt;/h1&gt;
+                    &lt;p&gt;Este é um exemplo simples de estilo.
+                    &lt;/p&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </code></pre>
+    <p>Arquivo <code>styles.css</code>:</p>
+    <pre><code>body {
+                background-color: lightgray;
+                font-family: Verdana, sans-serif;
+            }
+            
+            h1 {
+                color: navy;
+                text-align: center;
+            }
+            
+            p {
+                color: darkslategray;
+                font-size: 18px;
+            }
+            </code></pre>
+    <hr>
+</body>
+</html>
